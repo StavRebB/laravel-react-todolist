@@ -1,0 +1,79 @@
+table {
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #f3f6e3;
+    font-size: 1.5rem;
+}
+
+.taskLabel {
+    padding-right: 0.5rem;
+}
+
+td {
+    text-align: right;
+    padding: 16px;
+    border-bottom: 2px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+.end {
+    text-align: left;
+    float: left;
+    padding: 0 1%;
+    cursor: pointer;
+}
+
+.end:hover {
+    border: 1px solid grey;
+    border-radius: 20%;
+}
+
+input:checked + label {
+    color: #737373;
+    text-decoration: line-through;
+}
+
+[type="checkbox"]:not(:checked),[type="checkbox"]:checked  {
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 1px solid #737373;
+  background: white;
+  border-radius: 0.2em;
+}
+
+.labels {
+    position: relative;
+}
+
+.taskBox {
+    position: absolute;
+    right: -1.5em;
+    top: 0.15em;
+    width: 1.4rem;
+    height: 1.4rem;
+    border: 1px solid #737373;
+    background-color: #f0f0f0;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+input:checked + label span:last-child {
+    background-color: #737373;
+}
+
+@media only screen and (max-width : 850px) {
+    table {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width : 851px) {
+    table {
+        width: 40%;
+        margin: 0.5rem 30%;
+    }
+}

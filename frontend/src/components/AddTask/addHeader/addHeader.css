@@ -1,0 +1,64 @@
+.headbar {
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+    background: rgb(179,127,57);
+    background: -moz-linear-gradient(0deg, rgba(179,127,57,1) 0%, rgba(212,134,36,1) 15%, rgba(211,141,45,1) 40%, rgba(223,171,87,1) 62%, rgba(233,204,134,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(179,127,57,1) 0%, rgba(212,134,36,1) 15%, rgba(211,141,45,1) 40%, rgba(223,171,87,1) 62%, rgba(233,204,134,1) 100%);
+    background: linear-gradient(0deg, rgba(179,127,57,1) 0%, rgba(212,134,36,1) 15%, rgba(211,141,45,1) 40%, rgba(223,171,87,1) 62%, rgba(233,204,134,1) 100%);
+    box-shadow: 1px 4px 5px rgba(46, 46, 46, 0.356);
+}
+
+.maintitle {
+    text-align: right;
+    font-weight: 400;
+    padding-top: 0.4rem;
+    margin: 0 4rem 0 2rem;
+}
+
+.plus {
+    border: 1px solid white;
+    border-radius: 10%;
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    background: rgb(162,176,179);
+    background: -moz-linear-gradient(0deg, rgba(162,176,179,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(162,176,179,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgba(162,176,179,1) 0%, rgba(255,255,255,1) 100%);
+    padding: 0 0.3rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+    cursor: pointer;
+}
+
+.plus:hover {
+    border: none;
+    box-shadow: none;
+}
+
+.border {
+    border: 3px solid black;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 60%;
+}
+
+h2 {
+    font-size: 1.7rem;
+    margin: 0;
+    padding: 0.05rem 0;
+}
+
+@media only screen and (max-width : 850px) {
+    .headbar {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width : 851px) {
+    .headbar {
+        width: auto;
+        margin: 0 30%;;
+    }
+}

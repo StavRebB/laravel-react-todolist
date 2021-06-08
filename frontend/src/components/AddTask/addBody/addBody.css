@@ -1,0 +1,52 @@
+.inputDiv {
+    text-align: center;
+    background-color: white;
+}
+
+.taskInputLabel {
+    margin: 2% 0;
+}
+
+#taskInput {
+    margin: 3% 0;
+    padding: 0 2%;
+    font-size: 2rem;
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: #f3f6e3;
+}
+
+.addButton {
+    margin-bottom: 2%;
+    font-size: 1.5rem;
+    background: rgb(162,176,179);
+    background: -moz-linear-gradient(0deg, rgba(162,176,179,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(162,176,179,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgba(162,176,179,1) 0%, rgba(255,255,255,1) 100%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.425);
+    cursor: pointer;
+}
+
+.addButton:hover {
+    box-shadow: none;
+}
+
+.addButton:disabled {
+    color: gray;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+@media only screen and (max-width : 850px) {
+    .inputDiv {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width : 851px) {
+    .inputDiv {
+        width: 40%;
+        margin: 0 30%;;
+    }
+}
