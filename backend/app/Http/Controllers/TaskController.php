@@ -14,11 +14,9 @@ class TaskController extends Controller
      */
     public function index()
     {
-        // $tasks = Task::all();
-        // $this->response()->json(['message' => 'success', 'data' => $tasks],200);
-        // return Task::all();
+        $tasks = Task::all();
 
-        return response()->json(['message' => 'success', 'data' => Task::all()],200);
+        return response()->json(['message' => 'success', 'data' => $tasks],200);
     }
 
     /**
@@ -35,7 +33,9 @@ class TaskController extends Controller
             'title' => 'required'
         ]);
 
-        return response()->json(['message' => 'success', 'data' => Task::create($request->all()),200]);
+        $newTask = Task::create($request->all());
+
+        return response()->json(['message' => 'success', 'data' => $newTask],200);
     }
 
     /**
@@ -46,7 +46,9 @@ class TaskController extends Controller
      */
     public function show($id)
     {
-        return response()->json(['message' => 'success', 'data' => Task::find($id)],200);
+        $singleTask = Task::find($id);
+        
+        return response()->json(['message' => 'success', 'data' => $singleTask],200);
     }
 
     /**
@@ -71,6 +73,8 @@ class TaskController extends Controller
      */
     public function destroy($id)
     {
-        return response()->json(['message' => 'success', 'data' => Task::destroy($id)], 200);
+        $toDelete = Task::destroy($id);
+        
+        return response()->json(['message' => 'success', 'data' => $toDelete], 200);
     }
 }
